@@ -1,0 +1,10 @@
+h1{
+width: 1000px;
+
+outline: none;
+background-color: #08cd1f;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 15px;
+}
