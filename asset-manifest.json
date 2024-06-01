@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/acrcane/sandbox-app/static/css/main.8cd84232.css",
+    "main.js": "/acrcane/sandbox-app/static/js/main.a7a6e377.js",
+    "static/media/404img.jpg": "/acrcane/sandbox-app/static/media/404img.e7e4e254a494b95a9af1.jpg",
+    "index.html": "/acrcane/sandbox-app/index.html",
+    "static/media/Umbrella_Corporation_logo.svg": "/acrcane/sandbox-app/static/media/Umbrella_Corporation_logo.4c389e115caeb0ec45cfd50bc65ddc26.svg",
+    "main.8cd84232.css.map": "/acrcane/sandbox-app/static/css/main.8cd84232.css.map",
+    "main.a7a6e377.js.map": "/acrcane/sandbox-app/static/js/main.a7a6e377.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8cd84232.css",
+    "static/js/main.a7a6e377.js"
+  ]
+}
