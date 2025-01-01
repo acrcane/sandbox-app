@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 // import friendsData from "../friends.json";
-import friendsData from "./friends.json";
+import friendsData from "../../friends.json";
 import FriendsList from "../FriendsList/FriendsList";
 import AddProfileForm from "../AddProfileForm/AddProfileForm";
 import ModalProfile from "../ModalProfile/ModalProfile";

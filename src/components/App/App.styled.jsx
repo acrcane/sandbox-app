@@ -6,4 +6,5 @@ margin: 0 auto;
 display: flex;
 justify-content: space-around;
 align-items: center;
+color: #FFFFFF;
 `
