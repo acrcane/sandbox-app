@@ -1,15 +1,13 @@
 {
   "files": {
     "main.css": "/sandbox-app/static/css/main.8cd84232.css",
-    "main.js": "/sandbox-app/static/js/main.5c39891a.js",
-    "static/media/404img.jpg": "/sandbox-app/static/media/404img.e7e4e254a494b95a9af1.jpg",
+    "main.js": "/sandbox-app/static/js/main.92baa1a1.js",
     "index.html": "/sandbox-app/index.html",
-    "static/media/Umbrella_Corporation_logo.svg": "/sandbox-app/static/media/Umbrella_Corporation_logo.4c389e115caeb0ec45cfd50bc65ddc26.svg",
     "main.8cd84232.css.map": "/sandbox-app/static/css/main.8cd84232.css.map",
-    "main.5c39891a.js.map": "/sandbox-app/static/js/main.5c39891a.js.map"
+    "main.92baa1a1.js.map": "/sandbox-app/static/js/main.92baa1a1.js.map"
   },
   "entrypoints": [
     "static/css/main.8cd84232.css",
-    "static/js/main.5c39891a.js"
+    "static/js/main.92baa1a1.js"
   ]
 }
