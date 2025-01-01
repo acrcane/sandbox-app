@@ -13,11 +13,12 @@ export const FriendInfo = styled.p`
 font-size: 15px;
 letter-spacing: 0.02;
 line-height: 2px;
+color: #fff;
 `
 
 export const ShowDetalisBtn = styled.button`
 width: 100px;
-heigth: 44px;
+height: 44;
 padding: 5px;
 border-radius: 10px;
 background-color: #0f70df;
