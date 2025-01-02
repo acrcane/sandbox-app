@@ -1,11 +1,9 @@
-import { useSelector } from "react-redux";
-import { Container, List, ListElem, FriendInfo, ShowDetalisBtn } from "./FriendsList.styled";
 
-const FriendsList = ({ newFriends, handleShowDetalis }) => {
+import { Container, List, ListElem, FriendInfo, ShowDetalisBtn, RemoveFriendBtn } from "./FriendsList.styled";
 
-  const state = useSelector(store => store)
+const FriendsList = ({ newFriends, handleShowDetalis, removeFriend }) => {
 
-  console.log('STATE', state);
+
   
   return (
     <Container>
@@ -16,6 +14,7 @@ const FriendsList = ({ newFriends, handleShowDetalis }) => {
             <FriendInfo>email: {contact.email}</FriendInfo>
             <FriendInfo>phone: {contact.phone}</FriendInfo>
             <ShowDetalisBtn onClick={() => {handleShowDetalis(contact)}}>Show detalis</ShowDetalisBtn>
+            <RemoveFriendBtn onClick={() => {removeFriend(contact.id)}}>Delete</RemoveFriendBtn>
           </ListElem>
         ))}
       </List>

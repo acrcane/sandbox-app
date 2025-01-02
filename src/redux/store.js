@@ -1,7 +1,9 @@
-import { createStore } from "redux";
+import { devToolsEnhancer } from "@redux-devtools/extension";
+import { combineReducers, createStore } from "redux";
+import { friendsReducer } from "./friendsReducer";
 
-const initialState = {ssssssssNAME: 123454321-12342123, products: [], isLoading: false, error: ''}
-const reducer = (state = initialState, action) => {
-    return state
-}
-export const store = createStore(reducer)
+const rootReducer = combineReducers({
+    profiles: friendsReducer,
+})
+const enhancer = devToolsEnhancer();
+export const store = createStore(rootReducer, enhancer);

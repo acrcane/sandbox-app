@@ -25,3 +25,12 @@ background-color: #0f70df;
 border: none;
 color: #fff;
 `
+export const RemoveFriendBtn = styled.button`
+width: 100px;
+height: 44;
+padding: 5px;
+border-radius: 10px;
+background-color: #df0f0f;
+border: none;
+color: #fff;
+`
