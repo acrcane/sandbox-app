@@ -1,9 +1,28 @@
-import { devToolsEnhancer } from "@redux-devtools/extension";
-import { combineReducers, createStore } from "redux";
-import { friendsReducer } from "./friendsReducer";
+import { configureStore } from "@reduxjs/toolkit";
+import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from "redux-persist";
+import storage from "redux-persist/lib/storage"
+import { profilesReducer } from "./friendsReducer";
+import { modalReducer } from "./ modalSlice";
 
-const rootReducer = combineReducers({
-    profiles: friendsReducer,
+const profilesConfig = {
+    key: 'profiles',
+    storage,
+    whitelist: ['friends'],
+    // blacklist: ['filter']
+}
+
+export const store = configureStore({
+    reducer: {
+        profiles: persistReducer(profilesConfig, profilesReducer), 
+        modal: modalReducer
+    },
+    middleware: getDefaultMiddleware => 
+        getDefaultMiddleware({
+            serializableCheck: {
+                ignoreActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER]
+            }
+        })
+    
 })
-const enhancer = devToolsEnhancer();
-export const store = createStore(rootReducer, enhancer);
+
+export const persistor = persistStore(store)
